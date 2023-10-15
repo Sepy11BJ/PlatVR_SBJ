@@ -1,0 +1,571 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:focus{
+    outline: none;
+}
+body{
+    /* font-family: 'Bricolage Grotesque', sans-serif;*/
+    font-family: 'DM Serif Display', serif;
+    /* font-family: 'Lobster', cursive;  */
+    /* font-family: 'PT Serif', serif;  */
+    
+
+}
+/*cabecera*/
+header {
+    margin: 0;
+    width: 100vw;
+    max-width: 2800px;
+    min-width: 320px;
+    height: 590px;
+    background: url(../img/somos3.jpg);
+    
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav{
+    /* background-color: #F6CE26; */
+    text-align: center;
+    padding: 20px 0 20px 0;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+header nav ul li i{
+    margin-right: 10px;
+}
+nav ul li a:hover {
+    color: #f8f8f8;
+}
+.menu-bar img{
+    width: 70px;
+    height: 50px;
+}
+.Nav-Menu img{
+    width: 70px;
+    height: 40px;
+}
+/* Scroll del Menu*/
+.black {
+    background: #F6CE26;
+    z-index: 1000;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+}
+/*Ocultar el menu desplegable*/
+.menu-bar{
+    display: none;
+}
+
+/* Iniciar Sesion */
+.redes{
+    padding: 20px;
+    margin-top: -45px;
+    margin-left: 80%;
+}
+/* body{
+    background: #DBDBDB;
+    font-family: 'Open sans';
+} */
+
+/* FORMULARIO =================================== */
+
+.form_wrap{
+    width: 100%;
+    max-width: 1050px;
+    height: 530px;
+    margin: 50px auto;
+    display: flex;
+
+    margin: 50px auto;
+
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mng{
+    width: 100%;
+    max-width: 1050px;
+    height: 530px;
+    margin: 50px auto;
+    display: flex;
+
+    margin: 50px auto;
+
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Informacion de Contacto*/
+
+.cantact_info::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #F6CE26;
+    opacity: 0.9;
+}
+
+.cantact_info{
+    width: 38%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../img/contactenos.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.info_title,
+.info_items{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.info_title{
+    margin-bottom: 60px;
+}
+
+.info_title span{
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info_title h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.info_title h3{
+    font-size: 18px;
+    text-align: center;
+}
+
+.info_items p{
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info_items p:nth-child(1) span{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.info_items p:nth-child(2) span{
+    font-size: 50px;
+    margin-right: 15px;
+    margin-left: 4px;
+}
+
+
+/* Formulario de contacto*/
+form.form_contact{
+    width: 62%;
+    padding: 30px 40px;
+}
+
+form.form_contact h1{
+	display: none;
+}
+
+form.form_contact h2{
+	font-size: 25px;
+	font-weight: 600;
+	color: #303030;
+	margin-bottom: 30px;
+}
+
+form.form_contact .user_info{
+    display: flex;
+    flex-direction: column;
+}
+
+form.form_contact label{
+    font-weight: 600;
+}
+
+form.form_contact input,
+form.form_contact textarea{
+    width: 100%;
+    padding: 8px 0px 5px;
+    margin-bottom: 20px;
+
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+
+    font-family: 'Open sans';
+	color: #5A5A5A;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+form.form_contact textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form.form_contact input[type="submit"]{
+    width: 180px;
+	background: #F6CE26;
+	padding: 10px;
+	border: none;
+	border-radius: 25px;
+
+    align-self: flex-end;
+
+    color: #fff;
+	font-family: 'Open sans';
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+form.form_contact input[type="submit"]:hover{
+    background: #dcb61c;
+}
+
+/* Ventana de errores*/
+.modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_modal{
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3{
+    text-align: center;
+    font-family: 'Ubuntu';
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.mensaje_modal h3:after{
+    content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #C5C5C5;
+	margin: 10px 0px 15px;
+}
+
+.mensaje_modal p{
+    font-size: 16px;
+    color: #606060;
+}
+
+.mensaje_modal p:before{
+    content: "\f00d";
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #E25151;
+    margin-right: 8px;
+}
+
+#btnClose{
+    display: inline-block;
+	padding: 3px 10px;
+	margin-top: 10px;
+
+	background: #E25151;
+	color: #fff;
+	border: 2px solid #B14141;
+	cursor: pointer;
+
+	/* float: right; */
+}
+
+/* MENSAJE EXITOSO*/
+
+.mensaje-exito{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje-exito h1{
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mensaje-exito a{
+    display: block;
+    padding: 10px 30px;
+    background: #F6CE26;
+    text-decoration: none;
+    color: #fff;
+}
+
+.mensaje-exito a:hover{
+    background: #dcb61c;
+}
+
+/* Footer */
+
+.imagen_footer{
+    width: 100%;
+    margin-bottom:-70px;
+}
+footer {
+    
+    overflow:hidden;
+    background:#F6CE26;
+}
+
+.contenedor-footer {
+    top: 400px;
+    /* padding: 50px; */
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+    padding-bottom: 50px;
+
+
+}
+
+.content-foo{
+    text-align: center;
+
+
+}
+
+.content-foo h4 {
+    color: #000000;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+}
+
+.content-foo p {
+    color: #000000;
+
+}
+
+
+.titulo-final {
+    padding: 20px;
+    background-color: #1c1c1c;
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 0 0 0;
+    color: #fafbfd;
+}
+
+.contenedor-footer img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.icon{
+
+    display: inline-flex;
+    margin-right: 9px;
+    padding-top: 0px;
+    margin-top: 0;
+
+    margin-bottom: px;
+
+}
+.lo{
+    margin-top: 14px;
+}
+
+
+
+.imagen_footer{
+    width: 100vw;
+    max-width: 3000px;
+    min-width: 320px;
+    margin:auto;
+}
+.imagen_footer img{
+    width: 100%;
+    margin-bottom:-30px;
+}
+
+/*responsive*/
+@media screen and (max-width: 800px) {
+    body{
+        padding-top: 72px;
+    }
+    header nav{
+        width: 75%;
+        height:100%;
+        left: -100%;
+        position: fixed;
+        background: #F6CE26;
+        margin: 0;
+        z-index: 1000;
+    }
+    header nav ul li{
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    header nav ul li a{
+        display: block;
+        padding: 23px;
+    }
+    header nav ul li i{
+        margin-right: 10px;
+    }
+    header nav ul li:hover{
+        background: #eece50;
+    }
+    /**/
+    .menu-bar{
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color:#F6CE26 ;
+        z-index: 1000;
+    }
+    .bt-menu img{
+        width: 30px;
+        height: 30px;
+        margin-bottom: -3px;
+    }
+    .menu-bar .bt-menu{
+        display: block;
+        padding: 20px;
+        color:#000000;
+        overflow: hidden;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .menu-bar img{
+        width: 60px;
+        height: 40px;
+    }
+
+    .menu-bar i{
+        float: right;
+        font-size: 30px;
+    }
+    
+    .social,.logo{
+        display: none;
+    }
+
+    .black {
+        display: none;
+    }
+    
+   
+    .imagen_footer{
+        margin-bottom:-5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    form.form_contact{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    form.form_contact h2{
+        margin-top: 0;
+        font-size: 20px;
+        
+    }
+    form.form_contact h1{
+        display: inline;
+        color: #B14141;
+        
+    }
+    form.form_contact input[type="submit"] {
+        width: auto;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .form_wrap {
+    max-width: 90%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    }  
+    .mng{
+        max-width: 90%;
+    }
+    
+      
+    .cantact_info {
+      display: none; /* Oculta completamente la sección cantact_info */
+    }
+}
