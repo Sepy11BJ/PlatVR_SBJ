@@ -1,0 +1,9 @@
+{
+    "name": "tu/nombre-de-proyecto",
+    "description": "Descripción de tu proyecto",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.29",
+        "php": "^8.2.4" 
+    }
+
+}
