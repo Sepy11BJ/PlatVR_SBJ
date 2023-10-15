@@ -1,0 +1,149 @@
+/* Estilos para el contenedor de la sección "Agregar Estudiante" */
+.add-student-section {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Estilos para el encabezado "Agregar Estudiante" */
+.add-student-section .header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-student-section .header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Estilos para los campos del formulario */
+.add-student-section form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555555;
+}
+
+.add-student-section form input[type="text"],
+.add-student-section form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333333;
+    transition: border-color 0.3s ease;
+}
+
+.add-student-section form input[type="text"]:focus,
+.add-student-section form input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+/* Estilos para el botón "Guardar Estudiante" */
+.add-student-section form button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-student-section form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los mensajes de error o éxito (puedes personalizarlos según tus necesidades) */
+.add-student-section .success-message {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.add-student-section .error-message {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.popup.show {
+    display: block;
+}
+
+select {
+    width: 100%; /* O ajusta el ancho según tus preferencias */
+    padding: 10px; /* Ajusta el relleno según tus preferencias */
+    border: 1px solid #ccc; /* Establece el borde y el color según tus preferencias */
+    border-radius: 5px; /* Ajusta el radio de borde según tus preferencias */
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+/* Estilo para el borde cuando el campo select tiene foco */
+select:focus {
+    border-color: #007BFF; /* Cambia el color del borde cuando está enfocado */
+    outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+        /* Estilos para el mensaje flotante */
+        .mensaje {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            z-index: 9999;
+        }
+
+/* Estilos para el botón de cancelar */
+.btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dc3545; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    text-decoration: none; /* Quitar subrayado */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición de color al pasar el ratón */
+}
+
+.btn-secondary:hover {
+    background-color: #a81919; /* Cambia el color de fondo al pasar el ratón */
+}

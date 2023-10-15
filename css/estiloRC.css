@@ -1,0 +1,17 @@
+.container {
+    margin-left: 26rem;
+    margin-top: 5rem;
+  }
+
+.panel-heading{
+    border-radius: 6px;   
+}
+
+.panel-title{
+    margin-left: 0.4rem;
+}
+
+.panel-ini{
+    margin-right: 0.3rem;
+    margin-top: -0.1rem;
+}
